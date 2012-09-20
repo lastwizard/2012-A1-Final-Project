@@ -11,8 +11,8 @@
         <asp:GridView ID="gridCart" runat="server" AutoGenerateColumns="false" ShowFooter="true" ShowHeader="true" Width="600px" CellPadding="3"
             BorderColor="Beige" BorderStyle="Solid" BorderWidth="1px" DataKeyNames="ID">
             <Columns>
-                <asp:BoundField HeaderText="Product" DataField="Name" />
-                <asp:BoundField HeaderText="Price" DataField="Price" DataFormatString="${0}" ItemStyle-HorizontalAlign="Right" />
+                <asp:BoundField HeaderText="Product" DataField="Product.Name" />
+                <asp:BoundField HeaderText="Price" DataField="Product.Price" DataFormatString="${0}" ItemStyle-HorizontalAlign="Right" />
                 <asp:TemplateField HeaderText="Quantity">
                     <ItemStyle HorizontalAlign="Center" />
                     <ItemTemplate>

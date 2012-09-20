@@ -11,7 +11,7 @@ namespace FinalProject.Domain.BaseClasses
 {
     public abstract class Base : Entity
     {
-        public virtual bool IsTransient()
+        public new virtual bool IsTransient()
         {
             return Id == 0;
         }

@@ -1,26 +1,13 @@
 ﻿namespace FinalProject.Web
 {
     using System;
-    using System.Reflection;
     using System.Web;
-    using System.Web.Mvc;
-    using System.Web.Routing;
-
     using Castle.Windsor;
-
     using CommonServiceLocator.WindsorAdapter;
-
     using log4net.Config;
-
     using Microsoft.Practices.ServiceLocation;
-
-    using SharpArch.Core.NHibernateValidator.ValidatorProvider;
     using SharpArch.Data.NHibernate;
-    using SharpArch.Web.Areas;
-    using SharpArch.Web.Castle;
-    using SharpArch.Web.ModelBinder;
     using SharpArch.Web.NHibernate;
-
     using FinalProject.Data.NHibernateMaps;
     using FinalProject.Web.CastleWindsor;
 

@@ -1,0 +1,32 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteMasterSingleColumn.master.cs" Inherits="UserControls_SiteMasterSingleColumn" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>The EComShop</title>
+    <!-- begin page-specific header content (SingleColumn) -->
+
+    <asp:ContentPlaceHolder ID="plcHead" runat="server" />
+
+    <!-- end page-specific content (SingleColumn) -->
+</head>
+<body>
+    <form id="form1" runat="server">
+        <ajax:ToolkitScriptManager runat="server" />
+        <div class="main">
+            <final:header ID="header" runat="Server" />
+
+            <!-- begin page-specific content (SingleColumn) -->
+            
+            <asp:contentplaceholder id="plcMain" runat="server" />
+            
+            <!-- end page-specific content (SingleColumn) -->
+        
+            <p>&nbsp;</p>
+            
+            <final:footer ID="footer" runat="server" />
+        </div>
+    </form>
+</body>
+</html>

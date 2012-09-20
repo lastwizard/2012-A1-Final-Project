@@ -1,0 +1,29 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteMasterDoubleColumn.master.cs" Inherits="UserControls_SiteMasterDoubleColumn" MasterPageFile="~/MasterPages/SiteMasterSingleColumn.master" %>
+<%@ MasterType VirtualPath="~/MasterPages/SiteMasterSingleColumn.master" %>
+
+<asp:Content ID="head" runat="server" ContentPlaceHolderID="plcHead">
+
+    <!-- begin page-specific header content (DoubleColumn) -->
+
+    <asp:ContentPlaceHolder ID="plcHead" runat="server" />
+
+    <!-- end page-specific header content (DoubleColumn) -->
+
+</asp:Content>
+
+<asp:Content ID="main" runat="server" ContentPlaceHolderID="plcMain">
+
+    <div class="leftColumn">
+        <!-- begin page-specific header content (DoubleColumn) -->
+                
+        <asp:contentplaceholder id="plcMain" runat="server" />
+                
+        <!-- end page-specific header content (DoubleColumn) -->
+    </div>
+        
+    <div class="rightColumn">
+        <final:Search id="search" runat="server" />
+        <final:Cart ID="cart" runat="server" />
+    </div>
+
+</asp:Content>

@@ -1,0 +1,211 @@
+﻿body
+{
+  padding: 10px;
+}
+
+a
+{
+  color: #A52A2A;
+}
+
+a:hover
+{
+  color: #A52A2A;
+}
+
+a:visited
+{
+  color: #A52A2A;
+}
+
+td, p, span, li, div, th
+{
+  font-family: arial;
+}
+
+td.label
+{
+  text-align: right;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 140px;
+}
+
+div.main
+{
+  width: 1000px;
+}
+
+div.leftColumn
+{
+  float: left;
+  width: 780px;
+}
+
+div.rightColumn
+{
+  float: right;
+  width: 200px;
+}
+
+div.sideBox
+{
+  background-color: #F5F5DC;
+  border: solid 1px #DEB887;
+  font-size: 8pt;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+div.sideBox div.title
+{
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+div.sideBox div.keywords input
+{
+  font-size: 8pt;
+  width: 180px;
+}
+
+div.sideBox div.order
+{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+div.sideBox div.order select
+{
+  font-size: 8pt;
+}
+
+div.sideBox div.button
+{
+  text-align: right;
+}
+
+.clr, .clear
+{
+  clear: both;
+  margin: 0px;
+  padding: 0px;
+}
+
+tr.totalLine
+{
+  font-weight: bold;
+}
+
+div.rightHalf
+{
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
+div.leftHalf
+{
+  float: left;
+  text-align: left;
+  width: 50%;
+}
+
+.header
+{
+  color: #5F9EA0;
+  font-size: 16pt;
+}
+
+.subNav
+{
+  background-color: #F5F5DC;
+  border: solid 1px #DEB887;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+.subNav a
+{
+  display: block;
+  float: left;
+  padding: 10px;
+}
+
+.subNav a.active,
+.subNav a.active:hover
+{
+  background-color: White;
+  color: Black;
+  text-decoration: none;
+}
+
+.subNav a:hover
+{
+  background-color: White;
+  color: #5F9EA0;
+}
+
+.accordionHeader
+{
+  background-color: #2E4d7B;
+  border: 1px solid #2F4F4F;
+  color: white;
+  cursor: pointer;
+  font-family: Arial, Sans-Serif;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.accordionHeaderSelected
+{
+  background-color: #5078B3;
+  border: 1px solid #2F4F4F;
+  color: white;
+  cursor: pointer;
+  font-family: Arial, Sans-Serif;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.accordionContent
+{
+  background-color: #D3DEEF;
+  border: 1px dashed #2F4F4F;
+  border-top: none;
+  padding: 5px;
+  padding-top: 10px;
+}
+
+table.grid-view input, select
+{
+  box-sizing: border-box;
+}
+
+table.grid-view
+{
+  table-layout: fixed;
+}
+
+input.name
+{
+  width: 225px;
+}
+
+input.description
+{
+  width: 275px;
+}
+
+input.price,
+input.quantity,
+input.image-url
+{
+  text-align: right;
+  width: 78px;
+}

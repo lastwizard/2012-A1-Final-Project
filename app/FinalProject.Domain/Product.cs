@@ -13,7 +13,7 @@ namespace FinalProject.Domain
         public const int NameLimit = 50;
         public const int ImageUrlLimit = 100;
 
-        public virtual int CurrentQuantity { get; protected set; }
+        public virtual int CurrentQuantity { get; set; }
 
         [NotNullNotEmpty]
         [Length(Max = NameLimit)]

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using HibernatingRhinos.Profiler.Appender.NHibernate;
 using NHibernate;
 using NHibernate.Metadata;
 using NUnit.Framework;
@@ -40,6 +41,7 @@ namespace SanityChecks.NHibernateMaps
                                    model,
                                    "../../../../app/Website/config/NHibernate.config");
             ServiceLocatorInitializer.Init();
+            NHibernateProfiler.Initialize();
         }
 
         [TearDown]

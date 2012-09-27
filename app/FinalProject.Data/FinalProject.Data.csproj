@@ -80,6 +80,7 @@
     <Compile Include="Interfaces\IUserRepository.cs" />
     <Compile Include="NHibernateMaps\CustomMappings\StoreOrderMap.cs" />
     <Compile Include="NHibernateMaps\CustomMappings\ShoppingCartMap.cs" />
+    <Compile Include="NHibernateMaps\CustomMappings\UserMap.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="Repositories\StoreOrderRepository.cs" />
     <Compile Include="Repositories\ProductRepository.cs" />

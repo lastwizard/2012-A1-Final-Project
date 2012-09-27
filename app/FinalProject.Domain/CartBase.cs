@@ -33,7 +33,7 @@ namespace FinalProject.Domain
         public virtual void AddItem(Product product, int count)
         {
             Check.Require(product != null, "Product is a required argument.");
-            T item = Items.FirstOrDefault(x => x.Product == product);
+            T item = Items.FirstOrDefault(x => x.Product.Equals(product));
             if (item != null)
             {
                 item.Quantity += count;

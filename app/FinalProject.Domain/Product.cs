@@ -49,7 +49,7 @@ namespace FinalProject.Domain
             Check.Require(order != null, "Order is a required argument.");
             Check.Require(!order.IsTransient(), "Order must not be transient.");
 
-            StoreOrderItem item = order.Items.FirstOrDefault(x => x.Product == this);
+            StoreOrderItem item = order.Items.FirstOrDefault(x => x.Product.Equals(this));
             Check.Require(item != null, "Order must be for this product.");
 
             CurrentQuantity -= item.Quantity;

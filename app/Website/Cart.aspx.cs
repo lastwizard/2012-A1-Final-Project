@@ -64,7 +64,7 @@ public partial class Cart : PageWithShoppingCart
                     if (quantity <= 0)
                         ShoppingCart.RemoveItem(product);
                     else
-                        ShoppingCart.Items.First(x => x.Product == product).Quantity = quantity;
+                        ShoppingCart.Items.First(x => x.Product.Equals(product)).Quantity = quantity;
                 }
             }
             SaveShoppingCart();

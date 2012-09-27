@@ -50,6 +50,7 @@ public class PageWithShoppingCart : System.Web.UI.Page
     protected void EmptyShoppingCart()
     {
         ShoppingCart.Items.Clear();
+        cartRep.DbContext.CommitChanges();
         SaveShoppingCart();
     }
 

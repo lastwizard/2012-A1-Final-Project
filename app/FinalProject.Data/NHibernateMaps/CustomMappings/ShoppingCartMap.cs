@@ -14,6 +14,7 @@ namespace Sample.Data.NHibernateMaps.CustomMappings
         public void Override(FluentNHibernate.Automapping.AutoMapping<ShoppingCart> mapping)
         {
             mapping.HasMany(x => x.Items)
+                .Inverse()
                 .Cascade.AllDeleteOrphan();
         }
 

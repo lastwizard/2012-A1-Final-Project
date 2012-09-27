@@ -28,6 +28,7 @@ public partial class Account_Addresses : AccountPage
         Address address = de.GetNewAddress();
         CurrentUser.Addresses.Add(address);
         userRepository.SaveOrUpdate(CurrentUser);
+        userRepository.DbContext.CommitChanges();
         BindAddresses();
     }
 
@@ -39,7 +40,7 @@ public partial class Account_Addresses : AccountPage
         UserControls_AddressDataEntry de = (UserControls_AddressDataEntry)e.Item.FindControl("entry");
         de.ReviseAddress(address);
         userRepository.SaveOrUpdate(CurrentUser);
-
+        userRepository.DbContext.CommitChanges();
         list_CancelCommand(source, e);
     }
 
@@ -54,6 +55,7 @@ public partial class Account_Addresses : AccountPage
         Address address = CurrentUser.Addresses.Where(x => x.Id == Convert.ToInt32(list.DataKeys[e.Item.ItemIndex])).First();
         CurrentUser.Addresses.Remove(address);
         userRepository.SaveOrUpdate(CurrentUser);
+        userRepository.DbContext.CommitChanges();
         list_CancelCommand(source, e);
     }
 

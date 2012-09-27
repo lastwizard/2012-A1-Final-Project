@@ -37,6 +37,7 @@ public class PageWithShoppingCart : System.Web.UI.Page
                 {
                     cart = new ShoppingCart();
                     cartRep.SaveOrUpdate(cart);
+                    cartRep.DbContext.CommitChanges();
                     HttpCookie cookie = new HttpCookie(cartCookieName, cart.Id.ToString());
                     cookie.Expires = DateTime.Now.AddYears(1);
                     Response.Cookies.Add(cookie);

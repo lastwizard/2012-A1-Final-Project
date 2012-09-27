@@ -84,6 +84,7 @@ public partial class Account_Default : AccountPage
                 }
 
                 userRepository.SaveOrUpdate(CurrentUser);
+                userRepository.DbContext.CommitChanges();
                 this.Master.Header.BindCustomer(CurrentUser);
 
                 lblResult.Text = "Congratulations! You have successfully updated your account.";
@@ -97,6 +98,7 @@ public partial class Account_Default : AccountPage
                 customer.UserName = txtUserName.Text;
                 customer.Password = txtPassword.Text;
                 userRepository.SaveOrUpdate(customer);
+                userRepository.DbContext.CommitChanges();
 
                 if (!String.IsNullOrEmpty(Request.QueryString["ReturnUrl"]))
                 {

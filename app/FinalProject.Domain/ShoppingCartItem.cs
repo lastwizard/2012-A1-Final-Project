@@ -13,6 +13,10 @@ namespace FinalProject.Domain
         [NotNull]
         public virtual ShoppingCart ShoppingCart { get; protected set; }
 
+        public virtual int ProductId { get { return Product.Id; } }
+        public virtual string Name { get { return Product.Name; } }
+        public virtual double Price { get { return Product.Price; } }
+
         protected ShoppingCartItem() {}
 
         public ShoppingCartItem(ShoppingCart cart, Product product)

@@ -13,6 +13,8 @@ namespace Sample.Data.NHibernateMaps.CustomMappings
 
         public void Override(FluentNHibernate.Automapping.AutoMapping<StoreOrder> mapping)
         {
+            mapping.References(x => x.BillingAddress).Cascade.All();
+            mapping.References(x => x.ShippingAddress).Cascade.All();
             mapping.HasMany(x => x.Items)
                 .Inverse()
                 .Cascade.AllDeleteOrphan();

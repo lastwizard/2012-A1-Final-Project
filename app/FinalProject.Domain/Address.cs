@@ -31,6 +31,18 @@ namespace FinalProject.Domain
         [NotNull]
         public virtual USState State { get; set; }
 
+        public virtual Address Clone()
+        {
+            Address address = new Address();
+            address.Name = this.Name;
+            address.Line1 = this.Line1;
+            address.Line2 = this.Line2;
+            address.City = this.City;
+            address.State = this.State;
+            address.ZipCode = this.ZipCode;
+            return address;
+        }
+
         public virtual string ToString(bool includeName, string delim)
         {
             StringBuilder builder = new StringBuilder();
